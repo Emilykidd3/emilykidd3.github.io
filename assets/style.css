@@ -1,7 +1,13 @@
 :root {
-    --primary-color: #bbbbbb;
-    --secondary-color: ;
-    --tertiary-color: #ffcdcd;
+    --primary-color: #555555;
+    --secondary-color: #ffffff;
+    --tertiary-color: #ffe7e7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,14 +24,6 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-}
-
-header h1 {
-    font-weight: normal;
-    font-size: 36px;
-    color: var(--tertiary-color);
-    margin: 0;
-    text-shadow: 0 0 10px rgba(255, 255, 255, .2);
 }
 
 header a {
@@ -46,10 +44,122 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 10px 25px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(255, 255, 255, .2);
 }
+
+header nav ul li a:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
 /* end header */
 
+/* hero start */
+.hero {
+    padding: 100px 0 150px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero h2 {
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 20px;
+    font-style: italic;
+    font-size: 100px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, .5);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-top: 60px;
+}
+
+.selfie {
+    padding-left: 20px;
+}
+
+.selfie img {
+    position: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 250px;
+    border-radius: 50%;
+}
+/* hero end */
+
+/* all sections */
+.section-title {
+    font-weight: bolder;
+}
+
+/* about start */
+.intro {
+    background-color: var(--tertiary-color);
+}
+
+.intro h1 {
+    color: var(--secondary-color);
+}
+
+.intro p {
+    color: var(--secondary-color);
+    line-height: 1.2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+/* about end */
+
+/* work/grid start */
+.github-work{
+    background: var(--secondary-color);
+}
+
+.github-work h1 {
+    color: var(--tertiary-color);
+}
+
+.work-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    padding-left: 10%;
+}
+
+.work-grid-container {
+    background: var(--secondary-color);
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    grid-template-rows: repeat(2, 3fr);
+    border: none;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+/* work/grid end */
+
+/* contact start */
+.contact-info {
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info h1 {
+    color: var(--secondary-color);
+}
+
+.contact-info a {
+    color: var(--secondary-color);
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+    padding: 10px 15px;
+    font-weight: lighter;
+}
+/* contact end */
