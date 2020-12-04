@@ -21,14 +21,14 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
+    position: static;
     position: -webkit-sticky;
     top: 0;
 }
 
 header a {
     text-decoration: none;
-    color: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 header nav {
@@ -51,7 +51,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--tertiary-color);
 }
 /* end header */
 
@@ -73,7 +73,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     padding-left: 30px;
-    padding-top: 60px;
+    padding-top: 70px;
 }
 
 .selfie {
@@ -92,6 +92,7 @@ header nav ul li a:hover {
 /* all sections */
 .section-title {
     font-weight: bolder;
+    padding: 10px;
 }
 
 /* about start */
@@ -133,11 +134,36 @@ header nav ul li a:hover {
     background: var(--secondary-color);
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(2, 4fr);
-    grid-template-rows: repeat(2, 3fr);
-    border: none;
+    grid-template-columns: repeat(4fr);
+    grid-template-rows: repeat(3fr);
+    border: 2px solid var(--tertiary-color);
     color: var(--secondary-color);
     font-size: 1.2rem;
+}
+
+.work-grid-item {
+    padding: 15px 0;
+    border: 2px solid var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.run-buddy {
+    grid-row: 1/ 1;
+    grid-column: 1/ 1;
+    height: 300px;
+    display: grid;
+    background-image: url(https://emilykidd3.github.io/run-buddy/);
+}
+
+.horiseon {
+    grid-row: 3/ 1;
+    grid-column: 1/ 1;
+    height: 300px;
+    display: grid;
+    background-image: url(https://emilykidd3.github.io/horiseon/);
 }
 /* work/grid end */
 
@@ -161,5 +187,6 @@ header nav ul li a:hover {
     font-style: normal;
     padding: 10px 15px;
     font-weight: lighter;
+    text-decoration: none;
 }
 /* contact end */
