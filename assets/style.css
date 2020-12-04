@@ -1,7 +1,7 @@
 :root {
     --primary-color: #555555;
     --secondary-color: #ffffff;
-    --tertiary-color: #ffe7e7;
+    --tertiary-color: #d6d6d6;
 }
 
 * {
@@ -91,79 +91,106 @@ header nav ul li a:hover {
 
 /* all sections */
 .section-title {
+    color: var(--primary-color);
     font-weight: bolder;
-    padding: 10px;
+    margin: 30px;
+    font-size: 40px;
+    text-align: right;
+    border-right: 4px solid var(--secondary-color);
+    padding: 20px 40px 20px 0;
 }
 
 /* about start */
 .intro {
     background-color: var(--tertiary-color);
-}
-
-.intro h1 {
-    color: var(--secondary-color);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
 }
 
 .intro p {
     color: var(--secondary-color);
     line-height: 1.2;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
+    width: 90%;
+    font-size: 24px;
     text-align: left;
+    padding: 10px;
 }
 /* about end */
 
 /* work/grid start */
 .github-work{
     background: var(--secondary-color);
-}
-
-.github-work h1 {
-    color: var(--tertiary-color);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
 }
 
 .work-grid-wrapper {
     display: flex;
     width: 100%;
     justify-content: left;
-    padding-left: 10%;
+    padding: 30px;
+}
+
+.github-work.section-title {
+    border-right: 4px solid var(--tertiary-color);
+}
+
+.work-grid-wrapper a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.work-grid-wrapper h3 {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: light;
 }
 
 .work-grid-container {
     background: var(--secondary-color);
-    width: 80%;
+    width: 800px;
+    height: 600px;
     display: grid;
-    grid-template-columns: repeat(4fr);
-    grid-template-rows: repeat(3fr);
-    border: 2px solid var(--tertiary-color);
-    color: var(--secondary-color);
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 200px);
+    color: var(--primary-color);
     font-size: 1.2rem;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .work-grid-item {
-    padding: 15px 0;
     border: 2px solid var(--tertiary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    background-color: var(--secondary-color);
 }
 
+
 .run-buddy {
-    grid-row: 1/ 1;
-    grid-column: 1/ 1;
-    height: 300px;
-    display: grid;
-    background-image: url(https://emilykidd3.github.io/run-buddy/);
+    grid-row: 1/ span 2;
+    grid-column: 1/ span 2;
+    background-image: url(./images/run-buddy.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top;
+    opacity: 0.8;
 }
 
 .horiseon {
-    grid-row: 3/ 1;
-    grid-column: 1/ 1;
-    height: 300px;
-    display: grid;
-    background-image: url(https://emilykidd3.github.io/horiseon/);
+    grid-row: 1/ span 1;
+    grid-column: 3/ span 1;
+    background-image: url(./images/horiseon.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top;
+    opacity: 0.8;
+    /* how to make just image lighter? */
 }
 /* work/grid end */
 
@@ -171,22 +198,19 @@ header nav ul li a:hover {
 .contact-info {
     background-color: var(--tertiary-color);
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.contact-info h1 {
-    color: var(--secondary-color);
+    align-items: baseline;
 }
 
 .contact-info a {
     color: var(--secondary-color);
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 24px;
     font-style: normal;
     padding: 10px 15px;
     font-weight: lighter;
     text-decoration: none;
+    padding-top: 20px;
 }
 /* contact end */
