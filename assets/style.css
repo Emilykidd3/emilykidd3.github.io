@@ -126,6 +126,10 @@ header nav ul li a:hover {
     align-items: baseline;
 }
 
+.github-work h1 {
+    border-right: 4px solid var(--primary-color);
+}
+
 .work-grid-wrapper {
     display: flex;
     width: 100%;
@@ -214,3 +218,9 @@ header nav ul li a:hover {
     padding-top: 20px;
 }
 /* contact end */
+
+/* media query for smaller desktop screens and smaller */
+
+/* media query for tablets and smaller */
+
+/* media query for mobile phones and smaller */
