@@ -89,54 +89,43 @@ header nav ul li a:hover {
 }
 /* hero end */
 
-/* all sections */
-.section-title {
-    color: var(--primary-color);
-    font-weight: bolder;
-    margin: 30px;
-    font-size: 48px;
-    text-align: right;
-    border-right: 4px solid var(--secondary-color);
-    padding: 20px 40px 20px 0;
-}
-
-.intro, .github-work, .contact-info {
-    background-color: var(--tertiary-color);
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
 /* about start */
-/* .intro {
-    background-color: var(--tertiary-color);
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
-} */
-
-.intro p {
-    color: var(--secondary-color);
+.about-me-text {
+    color: var(--primary-color);
     line-height: 1.2;
     width: 90%;
     font-size: 24px;
     text-align: left;
-    padding: 30px 10px 20px 10px;
 }
 /* about end */
 
-/* work/grid start */
-/* .github-work{
-    background: var(--secondary-color);
+/* all sections */
+.section-title {
+    color: var(--primary-color);
+    font-weight: bolder;
+    margin-right: 30px;
+    font-size: 48px;
+    text-align: right;
+    width: 250px;
+}
+
+.area {
+    background-color: var(--tertiary-color);
     display: flex;
     flex-wrap: nowrap;
-    align-items: baseline;
-} */
+    align-items: center;
+    padding: 25px 0;
+}
 
+.about-me-text, .work-grid-wrapper, .contact-links {
+    border-left: 3px solid var(--secondary-color);
+    padding: 5px 0 5px 30px;
+}
+
+/* work/grid start */
 .work-grid-wrapper {
     display: flex;
     justify-content: left;
-    padding: 30px;
 }
 
 .work-grid-wrapper h2 {
@@ -207,11 +196,16 @@ header nav ul li a:hover {
     font-weight: lighter;
 }
  
+
 .image-1 img {
     height: 100%;
     width: 100%;
-    margin-top: 1475px;
+    margin-top: 1470px;
     opacity: 0.4;
+}
+
+.image-1 img:hover {
+    opacity: 1;
 }
 
 .horiseon {
@@ -249,10 +243,15 @@ header nav ul li a:hover {
     opacity: 0.4;
 }
 
+.image-2 img:hover {
+    opacity: 1;
+}
+
 .filler-1 {
     grid-row: 2/ span 1;
     grid-column: 3/ span 1;
     background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
 .filler-1 h2{
@@ -266,27 +265,22 @@ header nav ul li a:hover {
 /* work/grid end */
 
 /* contact start */
-/* .contact-info {
-    background-color: var(--tertiary-color);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-} */
-
-.contact-info a {
-    color: var(--secondary-color);
-    margin: 20px 0;
+.contact-links a {
+    color: var(--primary-color);
     line-height: 1.5;
     font-size: 24px;
     font-style: normal;
-    padding: 10px 15px;
+    padding: 0px 15px;
     font-weight: normal;
     text-decoration: none;
-    padding-top: 20px;
 }
 
-.contact-info a:hover {
-    border-bottom: 2.5px solid var(--primary-color);
+.contact-links a:first-child {
+    padding-left: 0;
+}
+
+.contact-links a:hover {
+    border-bottom: 2.5px solid var(--secondary-color);
 }
 /* contact end */
 
