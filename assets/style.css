@@ -146,7 +146,7 @@ header nav ul li a:hover {
     width: 620px;
     height: 410px;
     display: grid;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(3, 200px);
     color: var(--primary-color);
     font-size: 1.2rem;
@@ -200,7 +200,7 @@ header nav ul li a:hover {
 .image-1 img {
     height: 100%;
     width: 100%;
-    margin-top: 1470px;
+    margin-top: 1105px;
     opacity: 0.4;
 }
 
@@ -239,7 +239,7 @@ header nav ul li a:hover {
 .image-2 img {
     height: 100%;
     width: 100%;
-    margin-top: 275px;
+    margin-top: 180px;
     opacity: 0.4;
 }
 
@@ -285,7 +285,20 @@ header nav ul li a:hover {
 /* contact end */
 
 /* media query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
 
+}
+    
+    
 /* media query for tablets and smaller */
+@media screen and (max-width: 768) {
+    header nav ul {
+        align-content: center;
+        justify-content: center;
+    }
+}
 
 /* media query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+
+}
