@@ -34,7 +34,6 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    /* align-items: center; */
     list-style: none;
 }
 
@@ -209,12 +208,8 @@ header nav ul li a:hover {
 }
 /* contact end */
 
-/* media query for smaller desktop screens and smaller */
-@media screen and (max-width: 980px) {
+/* application looks good for smaller desktop screens and larger tablets wtihout media queires */
 
-}
-    
-    
 /* media query for tablets and smaller */
 @media screen and (max-width: 768px) {
     header nav ul {
@@ -254,5 +249,4 @@ header nav ul li a:hover {
     .hero h2 {
         font-size: 60px;
     }
-
 }

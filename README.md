@@ -1,7 +1,7 @@
 # Emily Kidd's Portfolio
 
 ## Purpose
-A website for potential employers to access a deployed porfolio with work samples.
+A website for potential employers to access a deployed portfolio with work samples.
 
 ## Built With
 * HTML
