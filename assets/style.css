@@ -162,6 +162,10 @@ header nav ul li a:hover {
     background-color: var(--secondary-color);
 }
 
+.work-grid-item.password-generator {
+    background-image: url(./images/password-generator.png);
+}
+
 .h2, .h3, .h2-big, .h3-big {
     color: var(--primary-color);
     font-style: none;
