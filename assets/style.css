@@ -157,13 +157,15 @@ header nav ul li a:hover {
     background-image: url(./images/horiseon.png);
 }
 
+.work-grid-item.password-generator {
+    grid-column: 3/ span 1;
+    grid-row: 2/ span 1;
+    background-image: url(./images/password-generator.png);
+}
+
 .image-text {
     padding: 10px;
     background-color: var(--secondary-color);
-}
-
-.work-grid-item.password-generator {
-    background-image: url(./images/password-generator.png);
 }
 
 .h2, .h3, .h2-big, .h3-big {
@@ -211,8 +213,6 @@ header nav ul li a:hover {
     border-bottom: 2.5px solid var(--secondary-color);
 }
 /* contact end */
-
-/* application looks good for smaller desktop screens and larger tablets wtihout media queires */
 
 /* media query for tablets and smaller */
 @media screen and (max-width: 768px) {
