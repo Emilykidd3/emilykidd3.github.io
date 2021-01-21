@@ -169,6 +169,12 @@ header nav ul li a:hover {
     background-image: url(./images/code-quiz.png);
 }
 
+.work-grid-item.work-day-scheduler {
+    grid-column: 2/ span 1;
+    grid-row: 3; span 1;
+    background-image: url(./images/work-day-scheduler.png);
+}
+
 .image-text {
     padding: 10px;
     background-color: var(--secondary-color);
