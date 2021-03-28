@@ -146,45 +146,51 @@ header nav ul li a:hover {
 }
 
 .work-grid-item.run-buddy {
-    grid-column: 1/ span 2;
-    grid-row: 1/ span 2;
+    grid-column: 1/ span 1;
+    grid-row: 1/ span 1;
     background-image: url(./images/run-buddy.png);
 }
 
 .work-grid-item.horiseon {
-    grid-column: 3/ span 1;
+    grid-column: 2/ span 1;
     grid-row: 1/ span 1;
     background-image: url(./images/horiseon.png);
 }
 
 .work-grid-item.password-generator {
     grid-column: 3/ span 1;
-    grid-row: 2/ span 2;
+    grid-row: 1/ span 2;
     background-image: url(./images/password-generator.png);
 }
 
 .work-grid-item.coding-quiz {
     grid-column: 1/ span 1;
-    grid-row: 3/ span 1;
+    grid-row: 2/ span 1;
     background-image: url(./images/code-quiz.png);
 }
 
 .work-grid-item.work-day-scheduler {
     grid-column: 2/ span 1;
-    grid-row: 3/ span 2;
+    grid-row: 2/ span 2;
     background-image: url(./images/work-day-scheduler.png);
 }
 
 .work-grid-item.weather-dashboard {
     grid-column: 1/ span 1;
-    grid-row: 4/ span 1;
+    grid-row: 3/ span 1;
     background-image: url(./images/weather-dashboard.png);
 }
 
 .work-grid-item.wine-and-dine {
     grid-column: 3/ span 1;
-    grid-row: 4/ span 1;
+    grid-row: 3/ span 2;
     background-image: url(./images/wine-and-dine.png);
+}
+
+.work-grid-item.friendzone {
+    grid-column: 1/ span 2;
+    grid-row: 4/ span 1;
+    background-image: url(./images/friendzone.png);
 }
 
 .image-text {
